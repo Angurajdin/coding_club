@@ -21,13 +21,13 @@ body {
   margin-top: 20%;
 }
 
-.loginBgColor {
-  position: relative;
+.rightbox {
+  position: absolute;
   width: 429px;
   height: 783px;
   left: 982px;
   top: 28px;
-
+  
   background: linear-gradient(360deg, #251993 0%, rgba(62, 49, 183, 0.91) 99.48%);
   border-radius: 20px;
 }
@@ -88,7 +88,7 @@ border-radius: 10px;
   position: absolute;
 width: 128px;
 height: 60px;
-left: 184px;
+left: 217px;
 top: 257px;
 
 font-family: Ubuntu;
@@ -109,7 +109,7 @@ color: #000000;
   position: absolute;
   width: 125px;
   height: 60px;
-  left: 208px;
+  left: 217px;
   top: 415px;
   
   font-family: Ubuntu;
@@ -126,12 +126,12 @@ color: #000000;
   position: absolute;
 width: 555px;
 height: 42px;
-left: 217px;
+left: 445px;
 top: 161px;
 
 font-family: Ubuntu;
 font-style: normal;
-font-weight: bold;
+font-weight:bold;
 font-size: 36px;
 line-height: 41px;
 /* identical to box height */
@@ -154,13 +154,14 @@ color: #000000;
   border-radius: 20px;
 }
 .leftbox{
-  background: #E5E5E5;
   position: absolute;
-  /* width: 429px; */
-  /* height: 783px; */
-  /* right: 982px; */
-  top: 28px;
-  border-radius: 20px;
+width: 928px;
+height: 783px;
+left: 31px;
+top: 29px;
+
+background: rgba(196, 196, 196, 0.15);
+border-radius: 20px;
 }
 .codingclubtitle{
   position: absolute;
@@ -196,4 +197,25 @@ color: #000000;
   
   color: #FFFFFF;
   
+}
+.Forgotpassword{
+  position: absolute;
+width: 186px;
+height: 33px;
+left: 660px;
+top: 557px;
+
+font-family: Ubuntu;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.015em;
+
+color: #000000;
+text-decoration: none;
+
 }

@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="container ">
       <div className="row full-height">
-        <div className="col-9">
+        <div className="col-12 col-md-9  ">
           <div className="leftbox">
             <div className="col-3"></div>
             <div className="col-6 login">
@@ -17,6 +17,7 @@ function App() {
                 <div className="mb-3">
                 <label className="form-label  passwordlabel">Password</label>
                 <input type="password" className="form-control passwordinput" id="exampleInputPassword1"/>
+                <a className="Forgotpassword">Forgot Password?</a>
                 </div>
                 <button type="submit" className="loginbutton"  >Login</button>
               </form>
@@ -24,11 +25,11 @@ function App() {
             <div className="col"></div>
           </div>
         </div>
-        <div className="col-3 loginBgColor">
-          <div className="rightcontent">
+        <div className="col-3 rightbox">
+           
             <div className="codingclubtitle">Psg Tech Coding Club</div>
             <div className="codingclubcontent">Simple things should be simple, complex things should be possible.</div>
-          </div>
+           
         </div>
       </div>
     </div>
