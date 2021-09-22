@@ -1,38 +1,194 @@
-.App {
-  text-align: center;
+.login {
+  margin-top: 20%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.rightbox {
+  position: absolute;
+  width: 429px;
+  height: 783px;
+  left: 982px;
+  top: 28px;
+  
+  background: linear-gradient(360deg, #251993 0%, rgba(62, 49, 183, 0.91) 99.48%);
+  /* background-image: url('Finalwhitelogo.png'); */
+  border-radius: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* .full-height {
+  height: 100vh;
+} */
+
+.loginLogo{
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  left: 1097px;
+  top: 292px;
+
+  background: url(Finalwhitelogo.png);
+  border-radius: 44.5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.loginbutton{
+  position: absolute;
+  width: 224px;
+  height: 43px;
+  left: 383px;
+  top: 670px;
+  color:white;
+  background: #2C219A;
+  border-radius: 10px;
+}
+
+
+.emailinput{
+  position: absolute;
+width: 555px;
+height: 65px;
+left: 217px;
+top: 325px;
+
+border: 1px solid rgba(0, 0, 0, 0.37);
+box-sizing: border-box;
+border-radius: 10px;
+}
+
+.passwordinput{
+  position: absolute;
+  width: 555px;
+  height: 65px;
+  left: 217px;
+  top: 483px;
+  
+  border: 1px solid rgba(0, 0, 0, 0.37);
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.emaillabel{
+  position: absolute;
+width: 128px;
+height: 60px;
+left: 217px;
+top: 257px;
+
+font-family: Ubuntu;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.015em;
+
+color: #000000;
+
+}
+
+.passwordlabel{
+  position: absolute;
+  width: 125px;
+  height: 60px;
+  left: 217px;
+  top: 415px;
+  
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  letter-spacing: -0.015em;
+}
+.logintitle{
+  position: absolute;
+width: 555px;
+height: 42px;
+left: 445px;
+top: 161px;
+
+font-family: Ubuntu;
+font-style: normal;
+font-weight:bold;
+font-size: 36px;
+line-height: 41px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.015em;
+
+color: #000000;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.leftbox{
+  position: absolute;
+width: 928px;
+height: 783px;
+left: 31px;
+top: 29px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+background: rgba(196, 196, 196, 0.15);
+border-radius: 20px;
+}
+.codingclubtitle{
+  position: absolute;
+  width: 266px;
+  height: 34px;
+  
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.015em;
+  
+  color: #FFFFFF;
+}
+.codingclubcontent{
+  position: absolute;
+  width: 267px;
+  height: 47px;
+  
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.015em;
+  
+  color: #FFFFFF;
+  
+}
+.Forgotpassword{
+  position: absolute;
+width: 186px;
+height: 33px;
+left: 660px;
+top: 557px;
+
+font-family: Ubuntu;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.015em;
+
+color: #000000;
+text-decoration: none;
+
 }

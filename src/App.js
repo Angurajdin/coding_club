@@ -26,7 +26,7 @@ function App() {
           </div>
         </div>
         <div className="col-3 rightbox">
-           
+            <div className="loginLogo"></div>
             <div className="codingclubtitle">Psg Tech Coding Club</div>
             <div className="codingclubcontent">Simple things should be simple, complex things should be possible.</div>
            
