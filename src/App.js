@@ -1,38 +1,23 @@
 import './App.css';
+import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
+import LoginSignup from './LoginSignup';
 
 function App() {
   return (
-    <div className="container ">
-      <div className="row full-height">
-        <div className="col-12 col-md-9  ">
-          <div className="leftbox">
-            <div className="col-3"></div>
-            <div className="col-6 login">
-              <div className="logintitle">Log In</div>
-              <form>
-                <div className="mb-3">
-                <label className="form-label emaillabel">Email </label>
-                <input type="email" className="form-control emailinput" id="exampleInputEmail1" aria-describedby="emailHelp"/>
-                </div>
-                <div className="mb-3">
-                <label className="form-label  passwordlabel">Password</label>
-                <input type="password" className="form-control passwordinput" id="exampleInputPassword1"/>
-                <a className="Forgotpassword">Forgot Password?</a>
-                </div>
-                <button type="submit" className="loginbutton"  >Login</button>
-              </form>
-            </div>
-            <div className="col"></div>
-          </div>
-        </div>
-        <div className="col-3 rightbox">
-            <div className="loginLogo"></div>
-            <div className="codingclubtitle">Psg Tech Coding Club</div>
-            <div className="codingclubcontent">Simple things should be simple, complex things should be possible.</div>
-           
-        </div>
-      </div>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <LoginSignup/>
+        </Route>
+        <Route exact path="/forgetpassword">
+          <h1>Forget Password Page</h1>
+        </Route>
+        <Route path="*">
+          <h2>404, Page not found</h2>
+          <Link to="/">Back to Home Page</Link>
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
