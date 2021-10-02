@@ -33,7 +33,7 @@ const LoginSignup = () => {
                     <div className="col"></div>
                 </div>
                 { rightboxShow &&
-                    <div className="col-md-3 rightbox" style={{"fontFamily": "Ubuntu", "fontStyle": "normal", "fontWeight":"bold"}}>
+                    <div className="col-md-3 rightbox textStyle">
                         <img src="./Assets/Images/Finalwhitelogo.png" alt="can't fetch" />
                         <h4><b>Psg Tech Coding Club</b></h4>
                         Simple things should be simple, complex 

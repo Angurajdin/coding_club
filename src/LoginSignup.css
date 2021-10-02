@@ -54,3 +54,9 @@
   background: #2C219A;
   border-radius: 10px;
 }
+
+.textStyle{
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+}
