@@ -16,12 +16,13 @@ const Login = () => {
                 <input type="password" className="form-control inputField" id="Password1"/>
                 </div>
 
-                <div className="row justify-content-end">
-                <div className="col"></div>
-                <div className="col"></div>
-                <div className="col">
-                    <Link to="/forgetpassword">Forget Password?</Link>
-                </div>
+                <div className="row">
+                    <div className="col">
+                        Not a member? <Link to="/signup">Register</Link> 
+                    </div>
+                    <div className="col">
+                        <Link style={{float:"right"}} to="/forgetpassword">Forget Password?</Link>
+                    </div>
                 </div>
 
                 <div className="row justify-content-center">

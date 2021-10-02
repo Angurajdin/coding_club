@@ -6,7 +6,7 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/">
+        <Route exact path={["/", "/signup"]}>
           <LoginSignup/>
         </Route>
         <Route exact path="/forgetpassword">
@@ -14,7 +14,7 @@ function App() {
         </Route>
         <Route path="*">
           <h2>404, Page not found</h2>
-          <Link to="/">Back to Home Page</Link>
+          <Link to="/">Back to Login Page</Link>
         </Route>
       </Switch>
     </Router>

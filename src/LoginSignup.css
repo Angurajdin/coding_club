@@ -2,13 +2,13 @@
   position: relative;
   /* width: 320px; */
   height: 700px;
-  top: 50px;
+  top: 30px;
   background: linear-gradient(360deg, #251993 0%, rgba(62, 49, 183, 0.91) 99.48%);
   border-radius: 20px;
 }
 
 .loginTop{
-    top: 50px;
+    top: 30px;
 }
 
 .leftbox{
@@ -16,7 +16,7 @@
     /* width: 928px; */
     height: 700px;
     /* left: 31px; */
-    top: 50px;
+    top: 30px;
     background: rgba(196, 196, 196, 0.15);
     border-radius: 20px;
 }
