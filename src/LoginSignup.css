@@ -60,3 +60,18 @@
   font-style: normal;
   font-weight: bold;
 }
+img{
+    height: 250px;
+    width: 250px;
+}
+
+.img_container {
+    position: relative;
+}
+
+.text-block {
+    position: absolute;
+    bottom: 8px;
+    color: white;
+    text-align: center;
+}

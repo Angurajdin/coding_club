@@ -2,6 +2,7 @@ import Login from './Login';
 import Signup from './Signup';
 import './LoginSignup.css';
 import { useLocation } from 'react-router-dom'
+import logo from './Assets/Images/Finalwhitelogo.png'
 
 const LoginSignup = () => {
 
@@ -34,13 +35,19 @@ const LoginSignup = () => {
                 </div>
                 { rightboxShow &&
                     <div className="col-md-3 rightbox textStyle">
-                        <img src="./Assets/Images/Finalwhitelogo.png" alt="can't fetch" />
-                        <h4><b>Psg Tech Coding Club</b></h4>
-                        Simple things should be simple, complex 
-                        things should be possible.
+                        <br/><br/><br/>
+                        <br/><br/><br/>
+                        <div className="img_container">
+                            <img src={logo} alt="can't fetch"/>
+                            <br/><br/><br/>
+                            <div className="text-block">
+                                <h4><b>Psg Tech Coding Club</b></h4>
+                                Simple things should be simple, complex
+                                things should be possible.
+                            </div>
+                        </div>
                     </div>
                 }
-                
             </div>
         </div>
   
