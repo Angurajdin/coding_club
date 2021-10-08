@@ -15,30 +15,25 @@ const LoginSignup = () => {
     } else {
         page = <Signup />
     }
-    let rightboxShow;
-    console.log(window.screen.availWidth);
-    if (window.screen.availWidth < 768) {
-        rightboxShow = false
-    } else {
-        rightboxShow = true
-    }
 
     return (
         <div className="container loginTop">
             <div className="row">
-                <div className="col-sm-12 col-md-9">
+                <div className="col-md-12 col-lg-9">
                     <div className="col"></div>
-                    <div className="col-sm-9 col-md-7 leftbox">
+                    <div className="col-sm-10 col-md-8 leftbox">
                         {page}
                     </div>
                     <div className="col"></div>
                 </div>
-                { rightboxShow &&
-                    <div className="col-md-3 rightbox textStyle">
+                
+                    <div className="col-lg-3 rightbox textStyle d-none d-lg-block d-xl-block">
                         <br/><br/><br/>
                         <br/><br/><br/>
-                        <div className="img_container">
+                    <div className="img_container">
+                        <center>
                             <img src={logo} alt="can't fetch"/>
+                        </center>
                             <br/><br/><br/>
                             <div className="text-block">
                                 <h4><b>Psg Tech Coding Club</b></h4>
@@ -47,7 +42,6 @@ const LoginSignup = () => {
                             </div>
                         </div>
                     </div>
-                }
             </div>
         </div>
   
