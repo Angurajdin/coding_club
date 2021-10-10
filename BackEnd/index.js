@@ -12,13 +12,14 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 
-//database connections
-mongoose.connect("mongodb://localhost:27017/codingClub", {
+//database connections Local
+mongoose.connect("mongodb+srv://mongodb:mongodb@cluster0.zje2p.mongodb.net/test", {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
     .then(() => console.log("Connected to db..."))
     .catch((err) => console.log(err));
+
 
 // routes prefix
 const usersRoute = require('./routes/routes');
