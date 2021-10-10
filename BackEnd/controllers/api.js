@@ -2,12 +2,12 @@ const User = require('../models/user')
 
 module.exports = class API{
 
-    static async login(req, res) {
+    static async login(req,res) {
         try {
             let currentUser = await User.find({ emailID: req.body.email })
             if (currentUser !== []) {
-                if (currentUser.password === req.body.password) {
-                    return res.status(200).json({ currentUser: currentUser, message: "successfully"});
+                if (currentUser[0].password === req.body.password) {
+                    return res.status(200).json({ currentUser: currentUser[0], message: "successfully"});
                 }
                 else {
                     return res.status(400).json({message: "Invalid EmailID or Password"})

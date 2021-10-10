@@ -8,11 +8,14 @@ const Login = () => {
     const [password, setPassword] = useState("");
 
     const login = async() =>{
+
         const b = {
             email: emailid,
             password: password
         }
-        const a = await API.login(b)
+
+        console.log(b);
+        const a = await API.login(b);
         console.log(a);
     }
 

@@ -4,7 +4,7 @@ const url = 'http://localhost:5000/api/'
 export default class API{
 
     static async login(userData) {
-        const res = await axios.get(url, userData);
+        const res = await axios.post(url, userData);
         return res.data;
     }
 
