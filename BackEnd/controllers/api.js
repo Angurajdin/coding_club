@@ -6,7 +6,7 @@ module.exports = class API{
         try {
             let currentUser = await User.find({ emailID: req.body.email })
             if (currentUser !== []) {
-                if (currentUser.password === req.body.password) {
+                if (currentUser[0].password === req.body.password) {
                     return res.status(200).json({ currentUser: currentUser, message: "successfully"});
                 }
                 else {
